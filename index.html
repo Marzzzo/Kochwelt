@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo_small.png" sizes="48x48">
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+
+    <title>Kochwelt</title>
+
+</head>
+
+<body onload="init()">
+    <header w3-include-html="header.html" class="header">
+        <!-- header include is rendered here -->
+    </header>
+    <main class="vh100">
+        <section class="atf_section">
+            <div class="container_atf">
+                <div class="container_atf_img">
+                    <img class="img-atf" src="./img/lasagna-8804672_1280.jpg" alt="Lasagne Bolognese">
+                </div>
+            
+                <div class="container_atf_right">
+                    <div>
+                        <h1>Lasagne Bolognese</h1>
+                        <p>Eine Lasagne Bolognese wie beim Lieblingsitaliener gelingt auch zu Hause ganz einfach. Mit
+                            frischen Zutaten und ein bisschen Zeit kannst Du Dir und Deinen Gästen ein wunderbares Dinner
+                            bereiten.</p>
+                    </div>
+                    <a href="./recipe_4.html" class="button_green">
+                        Rezept öffnen
+                    </a>
+                </div>
+            
+            </div>
+        </section>
+    
+        <section class="recipe_section">
+        <div class="recipe-section_headline">
+            <h1>Lust auf was Neues?</h1>
+        </div>
+        <div class="recipe-section_quicklinks">
+            <a class="quicklink" href="./recipe_Marco.html"><img class="img-recipe img-recipe_responsive"
+                    src="./img/pizza-3010062_1280.jpg" alt="Rezept Marco"><span class="recipe_owner">Rezept Marco</span></a>
+            <a class="quicklink" href="./recipe_Johannes.html"><img class="img-recipe img-recipe_responsive"
+                    src="./img/ceviche.jpg" alt="Rezept Johannes"><span class="recipe_owner">Rezept Johannes</span></a>
+            <a class="quicklink" href="./recipe_pia.html"><img class="img-recipe img-recipe_responsive"
+                    src="./img/main_img_recipe_pia.jpg" alt="Rezept Pia"><span class="recipe_owner">Rezept Pia</span></a>
+        </div>
+        </section>
+    
+        <section class="third_section">
+        <div class="third_section_headline">
+            <h1>Die perfekte Rahmsoße</h1>
+        </div>
+        <div class="third_section_content">
+            <div class="third_section_paragraph">
+                <p>Spätzle, Nudeln, Kroketten, Schnitzel, Lende und Hühnchen, was haben diese Schmankerl gemeinsam?
+                    Richtig, sie schmecken alle noch besser mit Rahmsoße! Mit diesem Rezept braucht ihr nie wieder
+                    Fertigsoßen und Trockenmischungen, denn die beste schnelle Rahmsoße Frankens ist natürlich selbst
+                    gemacht! Natürlich lässt sich dieses Rezept auch ganz easy aufpeppen z.B. zur Paprika Rahmsoße oder
+                    zur Champignon Rahmsoße. Man merkt: Wir lieben diese Rahmsoße!</p><br>
+                <div>
+                    <a href="./Rahmsoße.html" class="button_green">Zum Rezept</a>
+                </div>
+            </div>
+            <div class="third_section_img">
+                <img class="img-recipe" src="./img/Rahmensoße.png" alt="Rahmensoße">
+            </div>
+        </div>
+        </section>
+    </main>
+    <div w3-include-html="footer.html" class="width100">
+        <a href="index.html" class="logo"></a>
+        <!--  hier mit header vereinheitlichen -->
+    </div>
+
+</body>
+
+</html>

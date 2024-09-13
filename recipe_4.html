@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" href="./recipe_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <header w3-include-html="header.html" class="header">
+        <!-- header include is rendered here -->
+    </header>
+
+    <main>
+    <div class="recipeimg">
+        <h1>Lasagne Bolognese</h1>
+        <img class="main_image_recipe" src="./img/lasagna-8804672_1280.jpg" alt="Lasagne Bolognese">
+    </div>
+
+    <div class="time_container">
+        <div class="container_icons">
+            <img class="icons" src="./img/icons/clock-regular.svg" alt="">
+            <p class="fonts"> 55 min</p>
+        </div>
+        <div class="container_icons">
+            <img class="icons" src="./img/icons/brain-solid.svg" alt="">
+            <p class="fonts"> fortgeschritten</p>
+        </div>
+        <div class="container_icons">
+            <img class="icons" src="./img/icons/calendar-alt-regular.svg" alt="">
+            <p class="fonts"> 13.07.2024</p>
+        </div>
+    </div>
+    <div class="seperator"></div>
+
+    <div class="ingredients">
+        <span>Zutaten für</span>
+        <input id="portionInput" class="inputfield" type="number" min="1" max="100" value="4">
+        <button class="button_green" onclick="adjustPortions()">Portionen</button>
+    </div>
+
+
+    <div class="container_table">
+        <table>
+            <tr>
+                <td class="td_width" data-amount="1">1 Schuss</td><td>Olivenöl (für die Form)</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="12">12 Stk</td><td>Lasagneblätter</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="200">200 g</td><td>Gouda (gerieben, zum Bestreuen)</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="100">100 g</td><td>Emmentaler (gerieben, zum<br>Bestreuen)</td>
+            </tr>
+        </table>
+                <h3>Für die Bechamel&shysauce</h3>
+        <table>
+            <tr>
+                <td class="td_width" data-amount="80">80 g</td><td>Butter</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="80">80 g</td><td>Mehl</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="800">800 ml</td><td>Milch</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Pfeffer (weiß)</td>
+            </tr>           
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Salz</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Muskat</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1</td><td>Lorbeerblatt</td>
+            </tr>
+        </table>
+                <h3>Für die Bolognese&shysauce</h3>
+        <table>
+            <tr>
+                <td class="td_width" data-amount="400">400 g</td><td>Rinderfaschiertes</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Stk</td><td>Knoblauchzehe</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Schuss</td><td>Öl</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Stk</td><td>Karotte</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Dose</td><td>Tomaten</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="5">5 EL</td><td>Tomatenmark</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="3">3 EL</td><td>Ketchup</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Basilikum</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Oregano</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Thymian</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Salz</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 Prise</td><td>Pfeffer</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="end_part">
+        <h2>Zubereitung</h2>
+        <div class="preparation">
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/clock-regular.svg" alt="clock">
+                <p class="fonts"> Gesamtzeit ca. 55 Minuten</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="instruction">Zuerst die Bolognesesauce zubereiten: Dafür Zwiebeln und Knoblauch schälen und fein hacken. Die Karotten schälen und raspeln. Dann Öl in einem Topf erhitzen, Faschiertes darin gleichmäßig anrösten und Zwiebeln, Knoblauch und Karotten zugeben und weiter anbraten. Tomaten und Tomatenmark sowie das Ketchup, Basilikum, Oregano, Thymian, Salz und Pfeffer hinzugeben und auf kleinster Stufe ca. 10 Min. köcheln lassen.
+        Anschließend die Bechamelsauce herstellen: Dafür Butter in einem Topf zerlassen, Mehl zufügen und sofort mit einem Schneebesen umrühren. Jetzt ganz langsam unter ständigem Rühren die Milch zufügen. Langsam aufkochen und rühren bis die Sauce dicklich ist. Sodann mit Pfeffer, Salz und Muskat würzen.
+        Für die Lasagne eine Auflaufform mit Olivenöl einfetten. Nun abwechselnd die Lasagneblätter und Bolognesesauce einschichten. Mit den Lasagneblättern beginnen, danach die Sauce usw. abwechselnd schichten.
+        Ganz zum Schluss mit der Bechamelsauce abschließen und frisch geriebenen Käse draufgeben. Im vorgeheizten Ofen bei 180° C Heißluft ca. 30 Minuten backen.
+    </p>
+
+    <h2 class="recipe_from">Rezept erstellt von</h2>
+
+    <div class="profile_section">
+        <img class="profile_img" src="./img/profile.png" alt="FotoS">
+        <span>Max M.</span>
+    </div>
+</main>
+
+    <div w3-include-html="footer.html" class="width100"><a href="index.html" class="logo"></a></div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" href="./recipe_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <header w3-include-html="header.html" class="header">
+        <!-- header include is rendered here -->
+    </header>
+    
+    <main>
+        <div class="recipeimg">
+        <h1>Ceviche</h1>
+        <img class="main_image_recipe" src="./img/ceviche.jpg" alt="Lasagne Bolognese">
+        </div>
+
+    <div class="time_container">
+        <div class="container_icons">
+            <img class="icons" src="./img/icons/clock-regular.svg" alt="">
+            <p class="fonts"> 35 min</p>
+        </div>
+        <div class="container_icons">
+            <img class="icons" src="./img/icons/brain-solid.svg" alt="">
+            <p class="fonts"> leicht</p>
+        </div>
+        <div class="container_icons">
+            <img class="icons" src="./img/icons/calendar-alt-regular.svg" alt="">
+            <p class="fonts"> 13.07.2024</p>
+        </div>
+    </div>
+    <div class="seperator"></div>
+
+    <div class="ingredients">
+        <span>Zutaten für</span>
+        <input id="portionInput" class="inputfield" type="number" min="1" max="20" value="4">
+        <button class="button_green" onclick="adjustPortions()">Portionen</button>
+    </div>
+
+    <div class="container_table">
+        <table>
+            <tr>
+                <td class="td_width" data-amount="400">400 g</td><td> frischer Kabeljau o.ä. Weissfisch</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="4">4</td><td>Limetten</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="150">150 g</td><td>Tomaten</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1</td><td>kleine rote Zwiebel</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="2">2</td><td> Stangen Staudensellerie</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="5">5</td><td> Stiele Koriander</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1</td><td>grüne Chilischote</td>
+            </tr>           
+            <tr>
+                <td class="td_width" data-amount="1" colspan="1">1 TL</td><td>Weißweinessig</td>
+            </tr>
+            <tr>
+                <td class="td_width" data-amount="1">1 TL</td><td>Olivenöl</td>
+            </tr>
+            <tr>
+                <td class="td_width"></td><td>Salz</td>
+            </tr>
+            <tr>
+                <td class="td_width"></td><td>Pfeffer</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="end_part">
+        <h2>Zubereitung</h2>
+        <div class="preparation">
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/clock-regular.svg" alt="clock">
+                <p class="fonts"> Gesamtzeit ca. 35 Minuten</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="instruction">
+        Für die Ceviche das Fischfilet kalt abspülen und mit Küchenpapier trocken tupfen, eventuell noch vorhandene Gräten entfernen.
+        Das Filet in etwa 1 cm große Würfel schneiden und in eine flache Schüssel geben.
+        Limetten halbieren und auspressen. Über die Fischwürfel geben und untermischen.
+        Inzwischen die Tomaten in kochendes Wasser tauchen, mit einer Schaumkelle herausheben und kalt abschrecken.
+        Tomaten häuten, halbieren, entkernen und in kleine Würfel schneiden.
+        Zwiebel schälen, vierteln und in feine Streifen schneiden.
+        Staudensellerie für die Ceviche waschen, putzen, gegebenenfalls entfädeln und fein würfeln.
+        Chilischote halbieren, nach Belieben entkernen, waschen und in dünne Ringe schneiden.
+        (Wer seine Ceviche sehr scharf mag, verzichtet auf das Entkernen und schneidet die Schote mitsamt der Kerne in dünne Ringe.)
+        Den Fisch aus dem Kühlschrank nehmen. Tomatenwürfel, Zwiebelstreifen, Selleriewürfel, Korianderblättchen, Chiliringe, Essig und Öl zum Fisch geben und untermischen.
+        Mit Salz und Pfeffer würzen. Die fertige Ceviche bei Raumtemperatur noch 15–20 Minuten ziehen lassen.
+    </p>
+
+    <h2 class="recipe_from">Rezept erstellt von</h2>
+
+    <div class="profile_section">
+        <img class="profile_img" src="./img/recipeownerjohannes.png" alt="FotoS">
+        <span>Johannes N.</span>
+    </div> 
+</main>
+
+    <div w3-include-html="footer.html" class="width100"></div>
+</body>
+
+</html>

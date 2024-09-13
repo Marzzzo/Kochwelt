@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" href="./recipe_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <header w3-include-html="header.html" class="header">
+        <!-- header include is rendered here -->
+    </header>
+
+    <main>
+        <div class="recipeimg">
+            <h1>Schwedische Zimtschnecken (Kanelbullar)</h1>
+            <img class="main_image_recipe" src="./img/main_img_recipe_pia.jpg" alt="Zimtschnecken">
+        </div>
+
+        <div class="time_container">
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/clock-regular.svg" alt="">
+                <p class="fonts"> 30 min</p>
+            </div>
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/brain-solid.svg" alt="">
+                <p class="fonts"> simpel</p>
+            </div>
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/calendar-alt-regular.svg" alt="">
+                <p class="fonts"> 13.07.2024</p>
+            </div>
+        </div>
+        <div class="seperator"></div>
+
+        <div class="ingredients">
+            <span>Zutaten für</span>
+            <input id="portionInput" class="inputfield" type="number" min="1" max="20" value="4">
+            <button class="button_green" onclick="adjustPortions()">Portionen</button>
+        </div>
+
+        <div class="container_table">
+            <table>
+                <tr>
+                    <td class="td_width" data-amount="450">450 g</td>
+                    <td>Weizenmehl (Type 405)</td>
+                </tr>
+                <td class="td_width" data-amount="250">250 ml</td>
+                <td>Milch</td>
+                <tr>
+                    <td class="td_width" data-amount="25">25 g</td>
+                    <td>frische Hefe</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="65">65 g</td>
+                    <td>Zucker</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="65">65 g</td>
+                    <td>weiche Butter </td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="1">1 Prise</td>
+                    <td>Salz</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="0,5">0,5 TL</td>
+                    <td>Kardamom</td>
+                </tr>
+            </table>
+            <h3>Für die Füllung</h3>
+            <table>
+                <tr>
+                    <td class="td_width" data-amount="90">90 g</td>
+                    <td>Butter</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="50">50 g</td>
+                    <td>brauner Zucker</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="1">1 TL</td>
+                    <td>Zimt</td>
+                </tr>
+            </table>
+            <h3>Außerdem</h3>
+            <table>
+                <tr>
+                    <td class="td_width" data-amount="1">1</td>
+                    <td>Eigelb (Gr. M)</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="2">2 EL</td>
+                    <td>Sahne</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="3">3 EL</td>
+                    <td>Hagelzucker</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="end_part">
+            <h2>Zubereitung</h2>
+            <div class="preparation">
+                <div class="container_icons">
+                    <img class="icons" src="./img/icons/clock-regular.svg" alt="clock">
+                    <p class="fonts"> Gesamtzeit ca. 65 min</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="instruction">Für den Hefeteig Mehl in eine Schüssel geben. Die Milch lauwarm erwärmen (nicht kochen!), die
+            Hefe hineinbröckeln und zergehen lassen, dann die Mischung zum Mehl geben. Zucker, weiche Butter, Salz und
+            Kardamom hinzugeben und alles zu einem glatten Teig kneten. Den Teig abgedeckt an einem warmen Ort ca. 30
+            Minuten gehen lassen.
+            Währenddessen für die Füllung Butter schmelzen und mit dem braunen Zucker und Zimt verrühren. Den Teig auf
+            leicht bemehlter Arbeitsfläche zu einem Rechteck (30 x 40 cm) ausrollen und vollständig mit der Füllung
+            einstreichen. Den Teig von der langen Seite aus einrollen und zu 1,5 cm breiten Schnecken schneiden.
+            Den Ofen auf 190 Grad Ober-/ Unterhitze (Umluft: 170 Grad) vorheizen. Ein Backblech mit Butter bestreichen. Die
+            Teigschnecken mit etwas Abstand auf das Blech legen. Eigelb mit Sahne verquirlen und die Schnecken damit
+            bestreichen. Die schwedischen Schnecken mit Hagelzucker bestreuen und im vorgeheizten Ofen ca. 18-20 Minuten
+            backen.
+            Anschließend etwas auskühlen lassen. Luftdicht verpackt bei Zimmertemperatur halten sie sich für mindestens 2
+            Tage.
+        </p>
+
+        <h2 class="recipe_from">Rezept erstellt von</h2>
+
+        <div class="profile_section">
+            <img class="profile_img" src="./img/IMG-20220702-WA0004.jpg" alt="FotoS">
+            <span>Pia W.</span>
+        </div>
+    </main>
+
+    <div w3-include-html="footer.html" class="width100"></div>
+</body>
+
+</html>

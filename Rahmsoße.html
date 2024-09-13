@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" href="./recipe_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <header w3-include-html="header.html" class="header">
+        <!-- header include is rendered here -->
+    </header>
+
+    <main>
+        <div class="recipeimg">
+            <h1>Die perfekte Rahmsoße</h1>
+            <img class="main_image_recipe" src="./img/Rahmensoße.png" alt="Rahmsoße">
+        </div>
+
+        <div class="time_container">
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/clock-regular.svg" alt="">
+                <p class="fonts"> 10 min</p>
+            </div>
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/brain-solid.svg" alt="">
+                <p class="fonts"> simpel</p>
+            </div>
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/calendar-alt-regular.svg" alt="">
+                <p class="fonts"> 13.07.2024</p>
+            </div>
+        </div>
+        <div class="seperator"></div>
+
+        <div class="ingredients">
+            <span>Zutaten für</span>
+            <input id="portionInput" class="inputfield" type="number" min="1" max="20" value="4">
+            <button class="button_green" onclick="adjustPortions()">Portionen</button>
+        </div>
+
+        <div class="container_table">
+            <table>
+                <tr>
+                    <td data-amount="1">1 EL</td>
+                    <td>Butter</td>
+                </tr>
+                <tr>
+                    <td data-amount="50">50 ml</td>
+                    <td>Schlagsahne</td>
+                </tr>
+                <tr>
+                    <td data-amount="50">50 ml</td>
+                    <td>Milch</td>
+                </tr>
+                <tr>
+                    <td data-amount="200">200 ml</td>
+                    <td>Fleischbrühe</td>
+                </tr>
+                <tr>
+                    <td data-amount="1">1 EL</td>
+                    <td>Tomatenmark</td>
+                </tr>
+                <tr>
+                    <td data-amount="2">2 EL</td>
+                    <td>Mehl</td>
+                </tr>
+                <tr>
+                    <td data-amount="75">75 ml</td>
+                    <td>kaltes Wasser</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Salz und Pfeffer</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="end_part">
+            <h2>Zubereitung</h2>
+            <div class="preparation">
+                <div class="container_icons">
+                    <img class="icons" src="./img/icons/clock-regular.svg" alt="clock">
+                    <p class="fonts"> Gesamtzeit ca. 10 Minuten</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="instruction">Die Butter schmelzen, dann Tomatenmark, Sahne, Milch und Brühe dazugeben. Das Mehl mit
+            dem
+            Wasser glatt rühren und auch dazugeben, abschmecken und aufkochen lassen. Kurz köcheln lassen, bis die Soße
+            dicker wird.</p>
+    </main>
+    <div w3-include-html="footer.html" class="width100"></div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactform.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+    <title>Kochwelt</title>
+
+</head>
+
+<body onload="init()">
+    <header w3-include-html="header.html" class="header">
+        <!-- header include is rendered here -->
+    </header>
+    <section class="contactform">
+        <div class="inside">
+            <h1>Kontaktformular</h1>
+            <form onsubmit="sendMail(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required class="media">
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required class="media">
+
+                <label for="subject">Betreff:</label>
+                <input type="text" id="subject" name="subject" required class="media">
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="auto" minrows="2" maxrows="6" required class="media"></textarea>
+
+                <button class="button_green" type="submit">Absenden</button>
+            </form>
+        </div>
+    </section>
+
+    <div w3-include-html="footer.html" class="width100">
+
+    </div>
+
+</body>
+
+</html>

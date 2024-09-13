@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" href="./recipe_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <header w3-include-html="header.html" class="header">
+        <!-- header include is rendered here -->
+    </header>
+
+    <main>
+        <div class="recipeimg">
+            <h1>Pizza Salami mit Zwiebeln und Paprika</h1>
+            <img class="main_image_recipe" src="./img/pizza-3010062_1280.jpg" alt="Pizza">
+        </div>
+
+        <div class="time_container">
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/clock-regular.svg" alt="">
+                <p class="fonts"> 35 min</p>
+            </div>
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/brain-solid.svg" alt="">
+                <p class="fonts"> simpel</p>
+            </div>
+            <div class="container_icons">
+                <img class="icons" src="./img/icons/calendar-alt-regular.svg" alt="">
+                <p class="fonts"> 13.07.2024</p>
+            </div>
+        </div>
+        <div class="seperator"></div>
+
+        <div class="ingredients">
+            <span>Zutaten für</span>
+            <input id="portionInput" class="inputfield" type="number" min="1" max="20" value="4">
+            <button class="button_green" onclick="adjustPortions()">Portionen</button>
+        </div>
+
+        <div class="container_table">
+            <h3>Für den Teig</h3>
+            <table>
+                <tr>
+                    <td class="td_width" data-amount="400">400 g</td>
+                    <td>Mehl</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="250">250 ml</td>
+                    <td>Wasser, lauwarmes</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="1">1</td>
+                    <td>Würfel Frischhefe</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="4">4 EL</td>
+                    <td>Olivenöl</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="3">3 EL</td>
+                    <td>gehäuft Kräuter, italienische, getrocknet</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="2">2 TL</td>
+                    <td>gehäuft Paprikapulver, edelsüßes</td>
+                </tr>
+                <tr>
+                    <td class="td_width"></td>
+                    <td>Prise Salz</td>
+                </tr>
+            </table>
+            <h3>Für den Belag</h3>
+            <table>
+                <tr>
+                    <td class="td_width" data-amount="350">350 ml</td>
+                    <td>Tomatensugo</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="1">1</td>
+                    <td>große Paprikaschote(n), rote</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="150">150 g</td>
+                    <td>Salami, ca. 12-15 Scheiben</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="1">1</td>
+                    <td>große Zwiebel(n), rote</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="1">1</td>
+                    <td>Knoblauchzehe(n)</td>
+                </tr>
+                <tr>
+                    <td class="td_width" data-amount="300">300 g</td>
+                    <td>Käse</td>
+                </tr>
+                <tr>
+                    <td class="td_width"></td>
+                    <td>n. B. Kräuter, italienische, getrocknet</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="end_part">
+            <h2>Zubereitung</h2>
+            <div class="preparation">
+                <div class="container_icons">
+                    <img class="icons" src="./img/icons/clock-regular.svg" alt="clock">
+                    <p class="fonts"> Gesamtzeit ca. 35 Minuten</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="instruction">Das Mehl in eine Schüssel geben und mit Salz, Kräutern und Paprikapulver gut vermischen.
+            In
+            der
+            Mitte eine Mulde formen und das Olivenöl in die Mulde gießen. Die Hefe im Wasser auflösen und ebenfalls in
+            die
+            Mulde geben. Alles gut verkneten, bis ein schön elastischer Teig entsteht.
+            In warmer Umgebung den Teig zugedeckt mit einem feuchten Küchentuch ca. 45 - 60 Minuten gehen lassen.
+
+            Während der Teig geht, alle Zutaten vorbereiten: die Salami in Scheiben, die Paprika in dünne Streifen, die
+            Zwiebel in Ringe schneiden und den Knoblauch in ganz dünne Scheiben hobeln.
+
+            Den Teig auf dem Backblech ausrollen und mit Tomatensugo bestreichen. Ein wenig getrockneten Oregano oder
+            andere
+            italienische Kräuter nach Geschmack darüber streuen, dann mit Salami, Paprikastreifen und Knoblauch belegen.
+            Zum
+            Schluss den Käse reiben und auf der Pizza verteilen. Alternativ kann der Käse auch auf die Tomatensauce
+            gerieben
+            und danach mit den Zutaten belegt werden, ich mag es aber lieber anders herum.
+
+            Bei ca. 225 °C Ober-/Unterhitze auf der mittleren Schiene etwa 25 - 30 Minuten backen. Je nachdem, wie
+            knusprig
+            man den Boden haben möchte, kann die Zeit etwas weniger oder mehr sein. Einfach regelmäßig reinschauen und
+            testen.
+
+            Je nach Geschmack kannst Du den Teig auch ohne oder mit anderen Kräutern und/oder anderen Gewürzen
+            aufpeppen.
+            Auch bei der Salami kann man gut verschiedene Arten ausprobieren, ich mag z. B. gerne eine Mischung aus
+            Fenchel-
+            und schärferer Chorizosalami.
+
+            Kann man übrigens auch hervorragend auf einem Pizzastein auf dem Grill zubereiten.</p>
+
+        <h2 class="recipe_from">Rezept erstellt von</h2>
+
+        <div class="profile_section">
+            <img class="profile_img" src="./img/IMG_5042.JPEG" alt="Foto">
+            <span>Marco B.</span>
+        </div>
+    </main>
+
+    <div w3-include-html="footer.html" class="width100"></div>
+</body>
+
+</html>
